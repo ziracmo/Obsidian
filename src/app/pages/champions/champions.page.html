@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Champions</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar [(ngModel)]="searchQuery"
+                   debounce="500"
+                   (ionChange)="filterChampionsList()" animated showCancelButton
+                   cancelButtonText="Cancel"></ion-searchbar>
+    <ion-list>
+        <app-champion-card *ngFor="let champion of filteredList" [champion]="champion"></app-champion-card>
+    </ion-list>
+</ion-content>

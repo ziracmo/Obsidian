@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>{{id}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding *ngIf="champion">
+    <ion-card>
+        <ion-img src="https://picsum.photos/200/100"></ion-img>
+        <ion-card-header>
+            <ion-card-subtitle>{{champion.name}}</ion-card-subtitle>
+            <ion-card-title>{{champion.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{champion.lore}}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
