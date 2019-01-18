@@ -18,5 +18,4 @@ export class ChampionCardComponent {
     public goToInformation(): void {
         this.router.navigate(['champion', this.champion.id]);
     }
-
 }

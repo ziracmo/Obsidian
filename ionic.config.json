@@ -1,5 +1,8 @@
 {
-  "name": "tp_mobile",
-  "integrations": {},
-  "type": "angular"
+  "name": "blitz_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "2c44c492"
 }
